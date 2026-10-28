@@ -143,9 +143,10 @@ h1{font-size:clamp(25px,6vw,39px);line-height:1.2;margin:12px 0;color:#fff8e7;fo
 <button class="music-control" id="musicToggle" type="button" aria-label="Mainkan selawat" aria-pressed="false">
   <span class="music-icon" id="musicIcon">▶</span><span id="musicLabel">Mainkan Selawat</span>
 </button>
-<audio id="backgroundAudio" loop preload="none">
-  <!-- Untuk mengaktifkan muzik, muat naik fail audio selawat yang anda miliki ke repository dan letakkan nama failnya di sini, contohnya: <source src="selawat.mp3" type="audio/mpeg"> -->
+<audio id="backgroundAudio" loop preload="auto">
+  <source src="Selawat.mp3" type="audio/mpeg">
 </audio>
+  
 <script>
 (function(){
   const audio = document.getElementById('backgroundAudio');
